@@ -10,7 +10,6 @@ export default {
     return {
       data: {
         line: {
-          animation: false,
           xAxis: {
             type: 'category',
             data: this.value.option.title
@@ -24,7 +23,6 @@ export default {
           }]
         },
         bar: {
-          animation: false,
           title: {
             text: this.value.title ? this.value.title : ''
           },
@@ -79,7 +77,6 @@ export default {
           yAxis: {}
         },
         pie: {
-          animation: false,
           tooltip: {
             trigger: 'item',
             formatter: '{b}: {c} ({d}%)'
@@ -118,7 +115,6 @@ export default {
           ]
         },
         radar: {
-          animation: false,
           title: {
             text: this.value.title ? this.value.title : '',
             top: '75%',
