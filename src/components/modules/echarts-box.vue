@@ -25,22 +25,60 @@ export default {
         },
         bar: {
           animation: false,
+          tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+              type: 'shadow'
+            }
+          },
+          grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+          },
+          xAxis: [
+            {
+              type: 'category',
+              data: this.value.option.title,
+              axisTick: {
+                alignWithLabel: true
+              }
+            }
+          ],
+          yAxis: [
+            {
+              type: 'value'
+            }
+          ],
+          series: [
+            {
+              name: '数据',
+              type: 'bar',
+              barWidth: '60%',
+              data: this.value.option.data
+            }
+          ]
+        },
+        morebar: {
+          animation: false,
           legend: {},
           tooltip: {},
           dataset: {
+            dimensions: ['product', '2015', '2016', '2017'],
             source: [
-              ['product', '2015'],
-              ['Matcha Latte', 43.3],
-              ['Milk Tea', 83.1],
-              ['Cheese Cocoa', 86.4],
-              ['Walnut Brownie', 72.4]
+              {product: 'Matcha Latte', '2015': 43.3, '2016': 85.8, '2017': 93.7},
+              {product: 'Milk Tea', '2015': 83.1, '2016': 73.4, '2017': 55.1},
+              {product: 'Cheese Cocoa', '2015': 86.4, '2016': 65.2, '2017': 82.5},
+              {product: 'Walnut Brownie', '2015': 72.4, '2016': 53.9, '2017': 39.1}
             ]
           },
-          xAxis: {type: 'category'},
-          yAxis: {},
           series: [
+            {type: 'bar'},
             {type: 'bar'}
-          ]
+          ],
+          xAxis: {type: 'category'},
+          yAxis: {}
         },
         pie: {
           animation: false,
@@ -147,6 +185,9 @@ export default {
           break
         case 'bar':
           option = this.data.bar
+          break
+        case 'morebar':
+          option = this.data.morebar
           break
         case 'pie':
           option = this.data.pie
