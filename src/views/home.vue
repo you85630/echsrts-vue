@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <Layout>
-      <Sider hide-trigger width="300">
+      <Sider hide-trigger width="300" class="sider-box">
         <div class="logo" @click="goHome"><img src="./../assets/img/logo.png" alt=""></div>
         <Menu theme="dark" ref="echarts" width="auto" :active-name="activeName" :open-names="nowOpen" @on-select="addTabs">
           <MenuGroup  v-for="item in Menu"  :key="item.id" :title="item.label">
@@ -61,7 +61,8 @@ export default {
       'closeTabs',
       'removeTabs',
       'defaultTabList',
-      'goHome'
+      'goHome',
+      'User'
     ]),
     // 默认事件
     init () {
@@ -75,6 +76,8 @@ export default {
       } else {
         this.goHome()
       }
+      // 获取用户信息
+      this.User()
     },
     refresh () {
       this.$nextTick(() => {
@@ -99,6 +102,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// .ivu-menu-dark,
+// .sider-box{
+//   background-color: #2d8cf0;
+// }
 .home{
   position: relative;
   overflow: hidden;

@@ -16,7 +16,7 @@ export default {
           {
             id: '1-1',
             icon: 'ios-albums',
-            label: '普通高中招生考试分析',
+            label: '2017届学生八年级期末考试',
             link: '/home/page1-1',
             children: [
               {
@@ -144,9 +144,7 @@ export default {
       }
     ],
     // 用户信息
-    user: {
-      name: '小明'
-    },
+    user: {},
     // 错误信息
     errMsg: ''
   },
@@ -167,6 +165,10 @@ export default {
     login ({ commit }, key) {
       commit('login')
     },
+    // 获取用户信息
+    User ({ commit }, key) {
+      commit('User')
+    },
     // 退出
     exit ({ commit }) {
       commit('exit')
@@ -176,8 +178,19 @@ export default {
   mutations: {
     // 登录
     login (state, key) {
+      state.user = {
+        name: '小明',
+        pic: 'http://you-img-box.oss-cn-shanghai.aliyuncs.com/img-5.jpeg'
+      }
       this._vm.VueCookie.set('USER', JSON.stringify(state.user))
       router.push('/home/index')
+    },
+    // 获取用户信息
+    User (state) {
+      state.user = {
+        name: '小明',
+        pic: 'http://you-img-box.oss-cn-shanghai.aliyuncs.com/img-5.jpeg'
+      }
     },
 
     // 退出
