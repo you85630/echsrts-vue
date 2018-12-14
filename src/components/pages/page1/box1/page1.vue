@@ -1,11 +1,11 @@
 <template>
   <div class="page">
-    page111
-    <echarts-box width="100%" height="400px" :value="linelist"></echarts-box>
+    1-1-1
+    <!-- <echarts-box width="100%" height="400px" :value="linelist"></echarts-box>
     <echarts-box width="100%" height="400px" :value="barlist"></echarts-box>
     <echarts-box width="100%" height="400px" :value="scatterList"></echarts-box>
     <echarts-box width="100%" height="400px" :value="pielist"></echarts-box>
-    <echarts-box width="100%" height="400px" :value="radarlist"></echarts-box>
+    <echarts-box width="100%" height="400px" :value="radarlist"></echarts-box> -->
   </div>
 </template>
 
