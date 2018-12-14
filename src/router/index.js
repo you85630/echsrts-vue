@@ -103,6 +103,16 @@ export default new Router({
           path: '/home/page2-2-3',
           name: 'page2-2-3',
           component: () => import('components/pages/page2/box2/page3')
+        },
+        {
+          path: '/home/page2-2-4',
+          name: 'page2-2-4',
+          component: () => import('components/pages/page2/box2/page4')
+        },
+        {
+          path: '/home/page2-2-5',
+          name: 'page2-2-5',
+          component: () => import('components/pages/page2/box2/page5')
         }
       ]
     }

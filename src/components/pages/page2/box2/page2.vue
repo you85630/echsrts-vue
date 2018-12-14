@@ -105,7 +105,7 @@ export default {
           type: 'radar',
           title: '中原区',
           option: {
-            title: [{name: '积累与运用'}, {name: '习作'}, {name: '阅读'}],
+            title: [{name: '积累与运用', max: 70}, {name: '习作', max: 70}, {name: '阅读', max: 70}],
             data: [{value: [51.24, 50.89, 51.29]}]
           }
         },
@@ -114,7 +114,7 @@ export default {
           type: 'radar',
           title: '金水区',
           option: {
-            title: [{name: '积累与运用'}, {name: '习作'}, {name: '阅读'}],
+            title: [{name: '积累与运用', max: 70}, {name: '习作', max: 70}, {name: '阅读', max: 70}],
             data: [{value: [50.07, 49.35, 49.77]}]
           }
         },
@@ -123,7 +123,7 @@ export default {
           type: 'radar',
           title: '经开区',
           option: {
-            title: [{name: '积累与运用'}, {name: '习作'}, {name: '阅读'}],
+            title: [{name: '积累与运用', max: 70}, {name: '习作', max: 70}, {name: '阅读', max: 70}],
             data: [{value: [50.64, 50.28, 50.61]}]
           }
         },
@@ -132,7 +132,7 @@ export default {
           type: 'radar',
           title: '金水区',
           option: {
-            title: [{name: '积累与运用'}, {name: '习作'}, {name: '阅读'}],
+            title: [{name: '积累与运用', max: 70}, {name: '习作', max: 70}, {name: '阅读', max: 70}],
             data: [{value: [52.56, 51.27, 52.45]}]
           }
         }
@@ -142,7 +142,7 @@ export default {
           type: 'radar',
           title: '惠济区',
           option: {
-            title: [{name: '积累与运用'}, {name: '习作'}, {name: '阅读'}],
+            title: [{name: '积累与运用', max: 70}, {name: '习作', max: 70}, {name: '阅读', max: 70}],
             data: [{value: [47.7, 48.12, 47.78]}]
           }
         },
@@ -151,7 +151,7 @@ export default {
           type: 'radar',
           title: '管城区',
           option: {
-            title: [{name: '积累与运用'}, {name: '习作'}, {name: '阅读'}],
+            title: [{name: '积累与运用', max: 70}, {name: '习作', max: 70}, {name: '阅读', max: 70}],
             data: [{value: [48.05, 48.96, 48.19]}]
           }
         },
@@ -160,7 +160,7 @@ export default {
           type: 'radar',
           title: '高新区',
           option: {
-            title: [{name: '积累与运用'}, {name: '习作'}, {name: '阅读'}],
+            title: [{name: '积累与运用', max: 70}, {name: '习作', max: 70}, {name: '阅读', max: 70}],
             data: [{value: [50.68, 48.69, 50.61]}]
           }
         },
@@ -169,7 +169,7 @@ export default {
           type: 'radar',
           title: '二七区',
           option: {
-            title: [{name: '积累与运用'}, {name: '习作'}, {name: '阅读'}],
+            title: [{name: '积累与运用', max: 70}, {name: '习作', max: 70}, {name: '阅读', max: 70}],
             data: [{value: [50.26, 50.84, 50.37]}]
           }
         }
@@ -180,7 +180,7 @@ export default {
           type: 'radar',
           title: '中原区',
           option: {
-            title: [{name: '数与代数'}, {name: '统计与概率'}, {name: '图形与几何'}],
+            title: [{name: '数与代数', max: 70}, {name: '统计与概率', max: 70}, {name: '图形与几何', max: 70}],
             data: [{value: [51.39, 51.05, 50.87]}]
           }
         },
@@ -189,7 +189,7 @@ export default {
           type: 'radar',
           title: '郑东新区',
           option: {
-            title: [{name: '数与代数'}, {name: '统计与概率'}, {name: '图形与几何'}],
+            title: [{name: '数与代数', max: 70}, {name: '统计与概率', max: 70}, {name: '图形与几何', max: 70}],
             data: [{value: [50.19, 50.59, 50.46]}]
           }
         },
@@ -198,7 +198,7 @@ export default {
           type: 'radar',
           title: '经开区',
           option: {
-            title: [{name: '数与代数'}, {name: '统计与概率'}, {name: '图形与几何'}],
+            title: [{name: '数与代数', max: 70}, {name: '统计与概率', max: 70}, {name: '图形与几何', max: 70}],
             data: [{value: [48.98, 48.93, 48.91]}]
           }
         },
@@ -207,7 +207,7 @@ export default {
           type: 'radar',
           title: '金水区',
           option: {
-            title: [{name: '数与代数'}, {name: '统计与概率'}, {name: '图形与几何'}],
+            title: [{name: '数与代数', max: 70}, {name: '统计与概率', max: 70}, {name: '图形与几何', max: 70}],
             data: [{value: [51.27, 51.59, 51.45]}]
           }
         },
@@ -216,7 +216,7 @@ export default {
           type: 'radar',
           title: '惠济区',
           option: {
-            title: [{name: '数与代数'}, {name: '统计与概率'}, {name: '图形与几何'}],
+            title: [{name: '数与代数', max: 70}, {name: '统计与概率', max: 70}, {name: '图形与几何', max: 70}],
             data: [{value: [47.63, 47.82, 47.97]}]
           }
         },
@@ -225,7 +225,7 @@ export default {
           type: 'radar',
           title: '管城区',
           option: {
-            title: [{name: '数与代数'}, {name: '统计与概率'}, {name: '图形与几何'}],
+            title: [{name: '数与代数', max: 70}, {name: '统计与概率', max: 70}, {name: '图形与几何', max: 70}],
             data: [{value: [49.72, 49.52, 49.47]}]
           }
         },
@@ -234,7 +234,7 @@ export default {
           type: 'radar',
           title: '高新区',
           option: {
-            title: [{name: '数与代数'}, {name: '统计与概率'}, {name: '图形与几何'}],
+            title: [{name: '数与代数', max: 70}, {name: '统计与概率', max: 70}, {name: '图形与几何', max: 70}],
             data: [{value: [50.29, 49.99, 49.73]}]
           }
         },
@@ -243,7 +243,7 @@ export default {
           type: 'radar',
           title: '二七区',
           option: {
-            title: [{name: '数与代数'}, {name: '统计与概率'}, {name: '图形与几何'}],
+            title: [{name: '数与代数', max: 70}, {name: '统计与概率', max: 70}, {name: '图形与几何', max: 70}],
             data: [{value: [49.81, 49.56, 49.85]}]
           }
         }
@@ -253,7 +253,7 @@ export default {
           type: 'radar',
           title: '中原区',
           option: {
-            title: [{name: '了解'}, {name: '应用'}, {name: '理解'}],
+            title: [{name: '了解', max: 70}, {name: '应用', max: 70}, {name: '理解', max: 70}],
             data: [{value: [51.15, 51.25, 51.26]}]
           }
         },
@@ -262,7 +262,7 @@ export default {
           type: 'radar',
           title: '郑东新区',
           option: {
-            title: [{name: '了解'}, {name: '应用'}, {name: '理解'}],
+            title: [{name: '了解', max: 70}, {name: '应用', max: 70}, {name: '理解', max: 70}],
             data: [{value: [50.36, 50.33, 50.36]}]
           }
         },
@@ -271,7 +271,7 @@ export default {
           type: 'radar',
           title: '经开区',
           option: {
-            title: [{name: '了解'}, {name: '应用'}, {name: '理解'}],
+            title: [{name: '了解', max: 70}, {name: '应用', max: 70}, {name: '理解', max: 70}],
             data: [{value: [48.91, 48.95, 48.94]}]
           }
         },
@@ -280,7 +280,7 @@ export default {
           type: 'radar',
           title: '金水区',
           option: {
-            title: [{name: '了解'}, {name: '应用'}, {name: '理解'}],
+            title: [{name: '了解', max: 70}, {name: '应用', max: 70}, {name: '理解', max: 70}],
             data: [{value: [51.38, 51.51, 51.41]}]
           }
         },
@@ -289,7 +289,7 @@ export default {
           type: 'radar',
           title: '惠济区',
           option: {
-            title: [{name: '了解'}, {name: '应用'}, {name: '理解'}],
+            title: [{name: '了解', max: 70}, {name: '应用', max: 70}, {name: '理解', max: 70}],
             data: [{value: [47.63, 47.61, 47.69]}]
           }
         },
@@ -298,7 +298,7 @@ export default {
           type: 'radar',
           title: '管城区',
           option: {
-            title: [{name: '了解'}, {name: '应用'}, {name: '理解'}],
+            title: [{name: '了解', max: 70}, {name: '应用', max: 70}, {name: '理解', max: 70}],
             data: [{value: [49.6, 49.54, 49.64]}]
           }
         },
@@ -307,7 +307,7 @@ export default {
           type: 'radar',
           title: '高新区',
           option: {
-            title: [{name: '了解'}, {name: '应用'}, {name: '理解'}],
+            title: [{name: '了解', max: 70}, {name: '应用', max: 70}, {name: '理解', max: 70}],
             data: [{value: [50.19, 50.06, 50.05]}]
           }
         },
@@ -316,7 +316,7 @@ export default {
           type: 'radar',
           title: '二七区',
           option: {
-            title: [{name: '了解'}, {name: '应用'}, {name: '理解'}],
+            title: [{name: '了解', max: 70}, {name: '应用', max: 70}, {name: '理解', max: 70}],
             data: [{value: [49.73, 49.71, 49.77]}]
           }
         }
@@ -327,7 +327,7 @@ export default {
           type: 'radar',
           title: '中原区',
           option: {
-            title: [{name: '生命科学'}, {name: '物质科学'}, {name: '地球和宇宙'}],
+            title: [{name: '生命科学', max: 70}, {name: '物质科学', max: 70}, {name: '地球和宇宙', max: 70}],
             data: [{value: [51.28, 51.02, 51.14]}]
           }
         },
@@ -336,7 +336,7 @@ export default {
           type: 'radar',
           title: '郑东新区',
           option: {
-            title: [{name: '生命科学'}, {name: '物质科学'}, {name: '地球和宇宙'}],
+            title: [{name: '生命科学', max: 70}, {name: '物质科学', max: 70}, {name: '地球和宇宙', max: 70}],
             data: [{value: [50.4, 50.64, 50.59]}]
           }
         },
@@ -345,7 +345,7 @@ export default {
           type: 'radar',
           title: '经开区',
           option: {
-            title: [{name: '生命科学'}, {name: '物质科学'}, {name: '地球和宇宙'}],
+            title: [{name: '生命科学', max: 70}, {name: '物质科学', max: 70}, {name: '地球和宇宙', max: 70}],
             data: [{value: [50.94, 51.12, 50.74]}]
           }
         },
@@ -354,7 +354,7 @@ export default {
           type: 'radar',
           title: '金水区',
           option: {
-            title: [{name: '生命科学'}, {name: '物质科学'}, {name: '地球和宇宙'}],
+            title: [{name: '生命科学', max: 70}, {name: '物质科学', max: 70}, {name: '地球和宇宙', max: 70}],
             data: [{value: [52.32, 52.5, 52.47]}]
           }
         },
@@ -363,7 +363,7 @@ export default {
           type: 'radar',
           title: '惠济区',
           option: {
-            title: [{name: '生命科学'}, {name: '物质科学'}, {name: '地球和宇宙'}],
+            title: [{name: '生命科学', max: 70}, {name: '物质科学', max: 70}, {name: '地球和宇宙', max: 70}],
             data: [{value: [46.84, 46.67, 46.82]}]
           }
         },
@@ -372,7 +372,7 @@ export default {
           type: 'radar',
           title: '管城区',
           option: {
-            title: [{name: '生命科学'}, {name: '物质科学'}, {name: '地球和宇宙'}],
+            title: [{name: '生命科学', max: 70}, {name: '物质科学', max: 70}, {name: '地球和宇宙', max: 70}],
             data: [{value: [48.66, 48.56, 48.7]}]
           }
         },
@@ -381,7 +381,7 @@ export default {
           type: 'radar',
           title: '高新区',
           option: {
-            title: [{name: '生命科学'}, {name: '物质科学'}, {name: '地球和宇宙'}],
+            title: [{name: '生命科学', max: 70}, {name: '物质科学', max: 70}, {name: '地球和宇宙', max: 70}],
             data: [{value: [50.61, 50.37, 50.41]}]
           }
         },
@@ -390,7 +390,7 @@ export default {
           type: 'radar',
           title: '二七区',
           option: {
-            title: [{name: '生命科学'}, {name: '物质科学'}, {name: '地球和宇宙'}],
+            title: [{name: '生命科学', max: 70}, {name: '物质科学', max: 70}, {name: '地球和宇宙', max: 70}],
             data: [{value: [50.48, 50.44, 50.2]}]
           }
         }
@@ -400,7 +400,7 @@ export default {
           type: 'radar',
           title: '中原区',
           option: {
-            title: [{name: '了解'}, {name: '科学探究'}, {name: '理解'}],
+            title: [{name: '了解', max: 70}, {name: '科学探究', max: 70}, {name: '理解', max: 70}],
             data: [{value: [51.27, 51.05, 51.09]}]
           }
         },
@@ -409,7 +409,7 @@ export default {
           type: 'radar',
           title: '郑东新区',
           option: {
-            title: [{name: '了解'}, {name: '科学探究'}, {name: '理解'}],
+            title: [{name: '了解', max: 70}, {name: '科学探究', max: 70}, {name: '理解', max: 70}],
             data: [{value: [50.45, 50.53, 50.66]}]
           }
         },
@@ -418,7 +418,7 @@ export default {
           type: 'radar',
           title: '经开区',
           option: {
-            title: [{name: '了解'}, {name: '科学探究'}, {name: '理解'}],
+            title: [{name: '了解', max: 70}, {name: '科学探究', max: 70}, {name: '理解', max: 70}],
             data: [{value: [50.89, 50.99, 51.05]}]
           }
         },
@@ -427,7 +427,7 @@ export default {
           type: 'radar',
           title: '金水区',
           option: {
-            title: [{name: '了解'}, {name: '科学探究'}, {name: '理解'}],
+            title: [{name: '了解', max: 70}, {name: '科学探究', max: 70}, {name: '理解', max: 70}],
             data: [{value: [52.3, 52.46, 52.55]}]
           }
         },
@@ -436,7 +436,7 @@ export default {
           type: 'radar',
           title: '惠济区',
           option: {
-            title: [{name: '了解'}, {name: '科学探究'}, {name: '理解'}],
+            title: [{name: '了解', max: 70}, {name: '科学探究', max: 70}, {name: '理解', max: 70}],
             data: [{value: [46.86, 46.83, 46.62]}]
           }
         },
@@ -445,7 +445,7 @@ export default {
           type: 'radar',
           title: '管城区',
           option: {
-            title: [{name: '了解'}, {name: '科学探究'}, {name: '理解'}],
+            title: [{name: '了解', max: 70}, {name: '科学探究', max: 70}, {name: '理解', max: 70}],
             data: [{value: [48.64, 48.65, 48.6]}]
           }
         },
@@ -454,7 +454,7 @@ export default {
           type: 'radar',
           title: '高新区',
           option: {
-            title: [{name: '了解'}, {name: '科学探究'}, {name: '理解'}],
+            title: [{name: '了解', max: 70}, {name: '科学探究', max: 70}, {name: '理解', max: 70}],
             data: [{value: [50.55, 50.39, 50.41]}]
           }
         },
@@ -463,7 +463,7 @@ export default {
           type: 'radar',
           title: '二七区',
           option: {
-            title: [{name: '了解'}, {name: '科学探究'}, {name: '理解'}],
+            title: [{name: '了解', max: 70}, {name: '科学探究', max: 70}, {name: '理解', max: 70}],
             data: [{value: [50.52, 50.33, 50.31]}]
           }
         }

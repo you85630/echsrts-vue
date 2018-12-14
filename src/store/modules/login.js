@@ -120,13 +120,23 @@ export default {
               }, {
                 id: '2-2-2',
                 icon: 'ios-albums',
-                label: '区域教育质量分析',
+                label: '区域教育质量优质指数分析',
                 link: '/home/page2-2-2'
               }, {
                 id: '2-2-3',
                 icon: 'ios-albums',
-                label: '学校教育质量分析',
+                label: '区域教育质量均衡指数分析',
                 link: '/home/page2-2-3'
+              }, {
+                id: '2-2-4',
+                icon: 'ios-albums',
+                label: '区域教育质量领先与建议关注分析',
+                link: '/home/page2-2-4'
+              }, {
+                id: '2-2-5',
+                icon: 'ios-albums',
+                label: '学校教育质量分析',
+                link: '/home/page2-2-5'
               }
             ]
           }
