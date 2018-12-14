@@ -10,7 +10,7 @@ export default {
       {
         id: '1',
         icon: 'ios-albums',
-        label: '中考教育质量检测分析',
+        label: '初中考试质量监测',
         link: '/home/page1',
         children: [
           {
@@ -79,7 +79,7 @@ export default {
       }, {
         id: '2',
         icon: 'ios-albums',
-        label: '中招与健康体检数据分析',
+        label: '小升初与将康体检数据分析',
         link: '/home/page1',
         children: [
           {

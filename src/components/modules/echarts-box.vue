@@ -25,6 +25,9 @@ export default {
         },
         bar: {
           animation: false,
+          title: {
+            text: this.value.title ? this.value.title : ''
+          },
           tooltip: {
             trigger: 'axis',
             axisPointer: {
@@ -37,26 +40,28 @@ export default {
             bottom: '3%',
             containLabel: true
           },
-          xAxis: [
-            {
-              type: 'category',
-              data: this.value.option.title,
-              axisTick: {
-                alignWithLabel: true
-              }
+          xAxis: {
+            type: 'category',
+            data: this.value.option.title,
+            axisTick: {
+              alignWithLabel: true
             }
-          ],
-          yAxis: [
-            {
-              type: 'value'
-            }
-          ],
+          },
+          yAxis: {
+            type: 'value'
+            // min: '40'
+          },
           series: [
             {
-              name: '数据',
               type: 'bar',
-              barWidth: '60%',
-              data: this.value.option.data
+              barWidth: '30%',
+              data: this.value.option.data,
+              label: {
+                normal: {
+                  show: true,
+                  position: 'top'
+                }
+              }
             }
           ]
         },
@@ -121,25 +126,31 @@ export default {
         },
         radar: {
           animation: false,
-          legend: {
-            data: ['预算分配（Allocated Budget）', '实际开销（Actual Spending）']
+          title: {
+            text: this.value.title ? this.value.title : '',
+            top: '75%',
+            left: 'center'
           },
+          tooltip: {},
           radar: {
             name: {
               textStyle: {
                 color: '#fff',
                 backgroundColor: '#999',
-                borderRadius: 3,
+                borderRadius: 2,
                 padding: [3, 5]
               }
             },
             indicator: this.value.option.title
           },
-          series: [{
-            name: '预算 vs 开销（Budget vs spending）',
-            type: 'radar',
-            data: this.value.option.data
-          }]
+          series: [
+            {
+              name: '数据：',
+              type: 'radar',
+              data: this.value.option.data,
+              symbol: 'rect'
+            }
+          ]
         },
         scatter: {
           tooltip: {

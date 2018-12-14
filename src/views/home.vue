@@ -29,7 +29,6 @@
               <router-view/>
             </div>
           </Content>
-          <Footer></Footer>
       </Layout>
     </Layout>
   </div>
@@ -158,8 +157,9 @@ export default {
     margin: 20px;
     padding: 20px;
     // 页面默认高度
-    min-height: 78vh;
+    height: 79.4vh;
     background-color: #fff;
+    overflow-y: auto;
   }
 }
 </style>
