@@ -41,8 +41,8 @@ export default {
           xAxis: {
             type: 'category',
             data: this.value.option.title,
-            axisTick: {
-              alignWithLabel: true
+            axisLabel: {
+              rotate: 40
             }
           },
           yAxis: {
@@ -73,7 +73,9 @@ export default {
             {type: 'bar'},
             {type: 'bar'}
           ],
-          xAxis: {type: 'category'},
+          xAxis: {
+            type: 'category'
+          },
           yAxis: {}
         },
         morebar3: {
