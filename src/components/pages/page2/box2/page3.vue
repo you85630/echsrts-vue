@@ -1,13 +1,13 @@
 <template>
   <div class="page">
     <Tabs>
-        <TabPane label="语文学科优质均衡情况" name="name1">
+        <TabPane label="语文学科" name="name1">
           <echarts-box width="100%" height="400px" :value="yuwen"></echarts-box>
         </TabPane>
-        <TabPane label="数学学科优质均衡情况" name="name2">
+        <TabPane label="数学学科" name="name2">
           <echarts-box width="100%" height="400px" :value="shuxue"></echarts-box>
         </TabPane>
-        <TabPane label="科学学科优质均衡情况" name="name3">
+        <TabPane label="科学学科" name="name3">
           <echarts-box width="100%" height="400px" :value="kexue"></echarts-box>
         </TabPane>
     </Tabs>

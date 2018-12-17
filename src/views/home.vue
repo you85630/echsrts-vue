@@ -164,9 +164,8 @@ export default {
     margin: 20px;
     padding: 20px;
     // 页面默认高度
-    height: 79.4vh;
+    min-height: 79.4vh;
     background-color: #fff;
-    overflow-y: auto;
   }
 }
 </style>
