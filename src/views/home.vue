@@ -3,7 +3,7 @@
     <Layout>
       <Sider hide-trigger width="300" class="sider-box">
         <div class="logo" @click="goHome"><img src="./../assets/img/logo.png" alt=""></div>
-        <Menu theme="dark" ref="echarts" width="auto" :active-name="activeName" :open-names="nowOpen" @on-select="addTabs">
+        <Menu  theme="dark" ref="echarts" width="auto" :active-name="activeName" :open-names="nowOpen" @on-select="addTabs">
           <MenuGroup  v-for="item in Menu"  :key="item.id" :title="item.label">
             <Submenu v-for="li in item.children" :key="li.id" :name="li.id" :title="li.label">
               <template slot="title"><Icon :type="li.icon" /> {{li.label}}</template>

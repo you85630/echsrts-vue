@@ -76,6 +76,20 @@ export default {
           xAxis: {type: 'category'},
           yAxis: {}
         },
+        morebar3: {
+          legend: {},
+          tooltip: {},
+          dataset: {
+            source: this.value.option.data
+          },
+          series: [
+            {type: 'bar'},
+            {type: 'bar'},
+            {type: 'bar'}
+          ],
+          xAxis: {type: 'category'},
+          yAxis: {}
+        },
         pie: {
           tooltip: {
             trigger: 'item',
@@ -196,6 +210,9 @@ export default {
           break
         case 'morebar':
           option = this.data.morebar
+          break
+        case 'morebar3':
+          option = this.data.morebar3
           break
         case 'pie':
           option = this.data.pie

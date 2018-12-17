@@ -61,7 +61,7 @@ export default {
                 id: '1-2-2',
                 icon: 'ios-albums',
                 label: '教育优质情况分析',
-                link: '/home/page1-2-3'
+                link: '/home/page1-2-2'
               }, {
                 id: '1-2-3',
                 icon: 'ios-albums',
