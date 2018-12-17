@@ -16,7 +16,7 @@ export default {
           {
             id: '1-1',
             icon: 'ios-albums',
-            label: '2017届学生八年级期末考试',
+            label: '2017届学生普通高中招生考试',
             link: '/home/page1-1',
             children: [
               {
@@ -32,12 +32,12 @@ export default {
               }, {
                 id: '1-1-3',
                 icon: 'ios-albums',
-                label: '整体教育优质情况分析',
+                label: '教育优质情况分析',
                 link: '/home/page1-1-3'
               }, {
                 id: '1-1-4',
                 icon: 'ios-albums',
-                label: '教育优质均衡情况分析',
+                label: '教育均衡情况分析',
                 link: '/home/page1-1-4'
               }, {
                 id: '1-1-5',
@@ -79,7 +79,7 @@ export default {
       }, {
         id: '2',
         icon: 'ios-albums',
-        label: '小升初与将康体检数据分析',
+        label: '民办小升初评价与健康体检数据关联分析',
         link: '/home/page1',
         children: [
           {
