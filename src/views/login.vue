@@ -1,7 +1,8 @@
 <template>
   <div class="login">
+    <div class="headline">{{siteName}}</div>
     <Card dis-hover class="card">
-      <p class="title" slot="title">{{siteName}}</p>
+      <p class="title" slot="title">用户登录</p>
       <Form class="form" ref="formInline" :model="formInline" :rules="ruleInline">
           <FormItem prop="user">
               <Input type="text" v-model="formInline.user" placeholder="请填写用户名">
@@ -19,7 +20,6 @@
           </FormItem>
       </Form>
     </Card>
-    <Spin size="large" fix v-if="status"></Spin>
   </div>
 </template>
 
@@ -29,7 +29,7 @@ import { mapActions, mapGetters } from 'vuex'
 export default {
   data () {
     return {
-      siteName: 'IVIEW-DEMO',
+      siteName: '郑州市基础教育质量监测分析平台',
       formInline: {
         user: 'admin',
         password: '123456'
@@ -47,7 +47,6 @@ export default {
   },
   computed: {
     ...mapGetters([
-      'status',
       'errMsg'
     ])
   },
@@ -68,17 +67,21 @@ export default {
 
 <style lang="scss" scoped>
 .login{
-  position: relative;
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   height: 100%;
   background-color: #001529;
-  }
+}
+.headline{
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #fff;
+  text-align: center;
+}
 .card{
-  margin-top: -120px;
   width: 420px;
   .title{
     text-align: center;

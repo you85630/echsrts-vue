@@ -2,7 +2,10 @@
   <div class="home">
     <Layout>
       <Sider hide-trigger width="300" class="sider-box">
-        <div class="logo" @click="goHome"><img src="./../assets/img/logo.png" alt=""></div>
+        <div class="logo" @click="goHome">
+          <p>郑州市基础教育质量监测分析平台</p>
+          <!-- <img src="./../assets/img/logo.png" alt=""> -->
+        </div>
         <Menu  theme="dark" ref="echarts" width="auto" :active-name="activeName" :open-names="nowOpen" @on-select="addTabs">
           <MenuGroup  v-for="item in Menu"  :key="item.id" :title="item.label">
             <Submenu v-for="li in item.children" :key="li.id" :name="li.id" :title="li.label">
@@ -122,6 +125,14 @@ export default {
       cursor: pointer;
       width: auto;
       height: 100%;
+    }
+    p{
+      font-size: 16px;
+      color: #fff;
+      padding: 10px 0;
+      margin-top: 10px;
+      font-weight: bold;
+      cursor: pointer;
     }
   }
 }
