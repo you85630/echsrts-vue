@@ -30,17 +30,13 @@ export default {
   data () {
     return {
       siteName: '郑州市基础教育质量监测分析平台',
-      formInline: {
-        user: 'admin',
-        password: '123456'
-      },
+      formInline: {},
       ruleInline: {
         user: [
           { required: true, message: '请填写用户名', trigger: 'blur' }
         ],
         password: [
-          { required: true, message: '请填写密码.', trigger: 'blur' },
-          { type: 'string', min: 1, message: '密码长度不能小于6位', trigger: 'blur' }
+          { required: true, message: '请填写密码.', trigger: 'blur' }
         ]
       }
     }

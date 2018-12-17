@@ -26,7 +26,7 @@
           <echarts-box width="100%" height="400px" :value="wuli"></echarts-box>
         </TabPane>
         <TabPane label="化学学科" name="name9">
-          <!-- <echarts-box width="100%" height="400px" :value="huaxue"></echarts-box> -->
+          <echarts-box width="100%" height="400px" :value="huaxue"></echarts-box>
         </TabPane>
         <TabPane label="生物学科" name="name10">
           <echarts-box width="100%" height="400px" :value="shengwu"></echarts-box>

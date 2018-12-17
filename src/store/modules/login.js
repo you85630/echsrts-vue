@@ -163,7 +163,7 @@ export default {
   actions: {
     // 登录
     login ({ commit }, key) {
-      commit('login')
+      commit('login', key)
     },
     // 获取用户信息
     User ({ commit }, key) {
@@ -178,23 +178,26 @@ export default {
   mutations: {
     // 登录
     login (state, key) {
-      state.user = {
-        name: '小明',
-        pic: 'http://you-img-box.oss-cn-shanghai.aliyuncs.com/img-5.jpeg'
+      if (key.password !== '123456') {
+        state.errMsg = '密码错误'
       }
-      this._vm.VueCookie.set('USER', JSON.stringify(state.user))
-      router.push('/home/index')
+      if (key.user !== 'admin') {
+        state.errMsg = '账号错误'
+      }
+      if (key.user === 'admin' && key.password === '123456') {
+        state.user = {name: '管理员'}
+        this._vm.VueCookie.set('USER', JSON.stringify(state.user))
+        router.push('/home/index')
+      }
     },
     // 获取用户信息
     User (state) {
-      state.user = {
-        name: '小明',
-        pic: 'http://you-img-box.oss-cn-shanghai.aliyuncs.com/img-5.jpeg'
-      }
+      state.user = {name: '管理员'}
     },
 
     // 退出
     exit (state) {
+      state.errMsg = ''
       state.user = {}
       router.push('/login')
       this._vm.VueCookie.delete('USER')
